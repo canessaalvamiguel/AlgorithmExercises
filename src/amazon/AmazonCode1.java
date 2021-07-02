@@ -1,3 +1,5 @@
+package amazon;
+
 import java.util.*;
 
 public class AmazonCode1 {
