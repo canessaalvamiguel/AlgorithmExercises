@@ -1,8 +1,8 @@
-package amazon;
+package amz;
 
 import java.util.*;
 
-public class AmazonCode2 {
+public class Amz2 {
     public static void main(String[] args) {
         System.out.println(solution("qwerccw23",3));
         System.out.println(solution("inthespainn",4));

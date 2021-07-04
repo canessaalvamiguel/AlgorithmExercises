@@ -1,8 +1,10 @@
 package codility
 
+import scala.collection.convert.ImplicitConversions.`map AsJavaMap`
+
 object Dominator {
   def solution(a: Array[Int]): Int = {
-    val counter: MMap[Int, Int] = MMap()
+    val counter: Map[Int, Int] = Map()
     for (element <- a) {
       counter.get(element) match {
         case Some(value) => counter.put(element, value + 1)

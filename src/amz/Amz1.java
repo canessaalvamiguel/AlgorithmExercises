@@ -1,8 +1,8 @@
-package amazon;
+package amz;
 
 import java.util.*;
 
-public class AmazonCode1 {
+public class Amz1 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(solution(new String[]{"2abc", "bcd", "cab"},new String[]{"dbc", "2abc", "cab", "bcd", "bcb"})));
         System.out.println(Arrays.toString(solution(new String[]{"in", "the", "spain"},new String[]{"the", "spain", "that", "the", "rain", "in", "spain", "stays", "forecast", "in", "the"})));
