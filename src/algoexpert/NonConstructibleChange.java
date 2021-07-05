@@ -20,6 +20,7 @@ public class NonConstructibleChange {
 
     public static int nonContructibleChange_algoexpertSolution(int[] coins){
 
+        //O(n) time
         Arrays.sort(coins);
         int change = 0;
         for(int coin : coins){
