@@ -9,8 +9,8 @@ public class UberExcercise {
 
     public static void main(String[] args) {
         float length = 30;
-        Float[] fares = {0.3f, 0.5f, 0.7f, 1f, 1.31f};
-        Float credit = 20f;
+        float[] fares = {0.3f, 0.5f, 0.7f, 1f, 1.31f};
+        float credit = 20f;
 
         long startTime = System.nanoTime();
         String solution = solution(length, fares, credit);
@@ -33,7 +33,7 @@ public class UberExcercise {
         System.out.println("Solution with method 4 is: " + solution3 + " duration was : " + (endTime - startTime));
     }
 
-    private static String solution(Float length, Float[] fares, Float credit) {
+    private static String solution(float length, float[] fares, float credit) {
         //This is the most efficient and the fastest
         for (int i = rides.length - 1; i >= 0; i--) {
             if( fares[i] * length <= credit )
@@ -43,7 +43,7 @@ public class UberExcercise {
         return "";
     }
 
-    private static String solution2(Float length, Float[] fares, Float credit) {
+    private static String solution2(float length, float[] fares, float credit) {
         int index =
                 IntStream
                         .range(0, rides.length)
@@ -56,7 +56,7 @@ public class UberExcercise {
         else return rides[index];
     }
 
-    private static String solution3(Float length, Float[] fares, Float credit) {
+    private static String solution3(float length, float[] fares, float credit) {
         int index =
                 IntStream
                         .range(0, rides.length)
@@ -74,7 +74,7 @@ public class UberExcercise {
         else return rides[index];
     }
 
-    private static String solution4(Float length, Float[] fares, Float credit) {
+    private static String solution4(float length, float[] fares, float credit) {
         AtomicInteger index = new AtomicInteger(-1);
 
         boolean found = IntStream.range(0, rides.length)
